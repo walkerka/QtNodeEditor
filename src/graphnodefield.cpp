@@ -23,6 +23,7 @@ GraphNodeField::GraphNodeField(GraphScene* scene, GraphNode* node, const QString
         mSlot->setParentItem(this);
         mSlot->setPos(-mSlot->rect().width(), (rect().height() - mSlot->rect().height()) * 0.5);
 
+        // @TODO: Embedded editable fields are not finished yet
         QWidget* editorWidget = NULL;
         switch (type)
         {
